@@ -7,9 +7,9 @@ import java.util.Optional;
 
 public interface SignoService {
 
-    List<SignoEntity> getSignos();
-    Optional<SignoEntity> getSygnosById(Long id);
-    SignoEntity saveSignos(SignoEntity signos);
-    SignoEntity updateSignosById(SignoEntity signos, Long id);
-    void deleteSignosById(Long id);
+    List<SignoEntity> getSigno();
+    Optional<SignoEntity> getSignoById(Long id);
+    SignoEntity saveSigno(SignoEntity signo);
+    SignoEntity updateSignoById(SignoEntity signo, Long id);
+    void deleteSignoById(Long id);
 }
