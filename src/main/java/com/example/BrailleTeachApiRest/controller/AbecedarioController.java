@@ -19,6 +19,7 @@ public class AbecedarioController {
     public List<AbecedarioEntity> getAbecedario(){
         return this.abecedarioService.getAbecedario();
     }
+
     @GetMapping(path = "/{idAbecedario}")
     public Optional<AbecedarioEntity> getAbecedarioById(@PathVariable("idAbecedario") Long id){
         return this.abecedarioService.getAbecedarioById(id);
