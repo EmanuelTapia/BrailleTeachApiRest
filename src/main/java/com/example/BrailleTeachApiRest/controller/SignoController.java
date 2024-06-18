@@ -10,32 +10,33 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/signo")
-
 public class SignoController {
 
     @Autowired
-    private SignoService sygnosService;
+    private SignoService signoService;
 
     @GetMapping
-    public List<SignoEntity> getSignos(){return this.sygnosService.getSignos();
+    public List<SignoEntity> getSignos(){
+        return this.signoService.getSigno();
     }
 
     @GetMapping(path = "/{idSigno}")
-    public Optional<SignoEntity> getSignosById(@PathVariable("idSigno") Long id){ return this.sygnosService.getSygnosById(id);
+    public Optional<SignoEntity> getSignoById(@PathVariable("idSigno") Long id){
+        return this.signoService.getSignoById(id);
     }
 
     @PostMapping
-    public SignoEntity saveSignos(@RequestBody SignoEntity signos){
-        return this.sygnosService.saveSignos(signos);
+    public SignoEntity saveSigno(@RequestBody SignoEntity signo){
+        return this.signoService.saveSigno(signo);
     }
 
-    @PutMapping(path = "/{idSignos}")
-    public SignoEntity updateSignosById(@RequestBody SignoEntity signos, @PathVariable("idSignos") Long id){
-        return this.sygnosService.updateSignosById(signos, id);
+    @PutMapping(path = "/{idSigno}")
+    public SignoEntity updateSignoById(@RequestBody SignoEntity signo, @PathVariable("idSigno") Long id){
+        return this.signoService.updateSignoById(signo, id);
     }
 
-    @DeleteMapping(path = "/{idSignos}")
-    public void deleteSignosById(@PathVariable("idSignos") Long id){
-        this.sygnosService.deleteSignosById(id);
+    @DeleteMapping(path = "/{idSigno}")
+    public void deleteSignoById(@PathVariable("idSigno") Long id){
+        this.signoService.deleteSignoById(id);
     }
 }
