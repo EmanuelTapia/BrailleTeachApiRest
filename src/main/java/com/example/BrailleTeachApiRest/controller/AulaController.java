@@ -21,8 +21,7 @@ public class AulaController {
     }
 
     @GetMapping(path = "/{idAula}")
-    public Optional<AulaEntity> getAulaById(@PathVariable("idAula") Long id){
-        return this.aulaService.getAulaById(id);
+    public Optional<AulaEntity> getAulaById(@PathVariable("idAula") Long id){ return this.aulaService.getAulaById(id);
     }
 
     @PostMapping
