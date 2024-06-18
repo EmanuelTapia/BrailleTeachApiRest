@@ -16,7 +16,8 @@ public class AulaEntity {
     @Column(name = "piso", columnDefinition = "varchar(20) not null")
     private String piso;
     @Column(name = "capacidad", columnDefinition = "int(11) not null")
-    private int capacidad;
+    private Integer capacidad;
     @Column(name = "horario", columnDefinition = "varchar(50) not null")
     private String horario;
+
 }
