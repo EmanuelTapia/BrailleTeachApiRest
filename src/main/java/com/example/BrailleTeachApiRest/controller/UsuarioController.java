@@ -22,11 +22,13 @@ public class UsuarioController {
     }
 
     @GetMapping(path = "/{idUsuario}")
-    public Optional<UsuarioEntity> getUsuarioById(@PathVariable("idUsuario") Long id){ return this.usuarioService.getUsuarioById(id);
+    public Optional<UsuarioEntity> getUsuarioById(@PathVariable("idUsuario") Long id){
+        return this.usuarioService.getUsuarioById(id);
     }
 
     @PostMapping
-    public UsuarioEntity saveUsuario(@RequestBody UsuarioEntity usuario){ return this.usuarioService.saveUsuario(usuario);
+    public UsuarioEntity saveUsuario(@RequestBody UsuarioEntity usuario){
+        return this.usuarioService.saveUsuario(usuario);
     }
 
     @PutMapping(path = "/{idUsuario}")
