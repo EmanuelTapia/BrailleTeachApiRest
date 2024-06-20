@@ -2,7 +2,6 @@ package com.example.BrailleTeachApiRest.service;
 
 import com.example.BrailleTeachApiRest.entity.UsuarioEntity;
 
-
 import java.util.List;
 import java.util.Optional;
 
