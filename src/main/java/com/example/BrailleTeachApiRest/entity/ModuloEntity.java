@@ -19,7 +19,7 @@ public class ModuloEntity {
     private AprenderEntity idAprender;
     @ManyToOne
     @JoinColumn(name = "idPracticar")
-    private AprenderEntity idPracticar;
+    private PracticarEntity idPracticar;
     @ManyToOne
     @JoinColumn(name = "idMinijuego")
     private MinijuegoEntity idMinijuego;

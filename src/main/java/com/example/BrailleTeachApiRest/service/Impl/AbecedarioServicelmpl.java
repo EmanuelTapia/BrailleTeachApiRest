@@ -37,7 +37,6 @@ public class AbecedarioServicelmpl implements AbecedarioService {
         abecedarioEntity.setLetra(abecedario.getLetra());
         abecedarioEntity.setCodigo(abecedario.getCodigo());
 
-
         abecedarioRepository.save(abecedarioEntity);
         return abecedarioEntity;
     }
