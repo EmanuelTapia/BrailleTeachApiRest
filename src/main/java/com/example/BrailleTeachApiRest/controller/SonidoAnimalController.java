@@ -1,6 +1,5 @@
 package com.example.BrailleTeachApiRest.controller;
 
-
 import com.example.BrailleTeachApiRest.entity.SonidoAnimalEntity;
 import com.example.BrailleTeachApiRest.service.SonidoAnimalService;
 import org.springframework.beans.factory.annotation.Autowired;
