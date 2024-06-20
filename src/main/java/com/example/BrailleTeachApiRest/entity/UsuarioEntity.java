@@ -24,6 +24,7 @@ public class UsuarioEntity {
     private String correo;
     @Column(name = "contraseña", columnDefinition = "varchar(50) not null")
     private String contraseña;
+
     @ManyToOne
     @JoinColumn(name = "idAula")
     private AulaEntity idAula;

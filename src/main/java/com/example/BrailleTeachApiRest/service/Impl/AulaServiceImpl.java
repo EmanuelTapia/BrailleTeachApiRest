@@ -16,8 +16,7 @@ public class AulaServiceImpl implements AulaService {
     private AulaRepository aulaRepository;
 
     @Override
-    public List<AulaEntity> getAula() {
-        return this.aulaRepository.findAll();
+    public List<AulaEntity> getAula() { return this.aulaRepository.findAll();
     }
 
     @Override
