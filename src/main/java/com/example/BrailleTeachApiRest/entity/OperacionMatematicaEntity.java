@@ -32,3 +32,4 @@ public class OperacionMatematicaEntity {
     private MinijuegoEntity idMinijuego;
 
 }
+
