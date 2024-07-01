@@ -38,7 +38,6 @@ public class AbecedarioController {
 
     @DeleteMapping(path = "/{idAbecedario}")
     public void deleteAbecedarioById(@PathVariable("idAbecedario") Long id){
-
         this.abecedarioService.deleteAbecedarioById(id);
     }
 }
