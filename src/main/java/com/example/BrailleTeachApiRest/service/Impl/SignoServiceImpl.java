@@ -35,6 +35,7 @@ public class SignoServiceImpl implements SignoService {
         SignoEntity signoEntity = signoRepository.findById(id).get();
 
         signoEntity.setSigno(signo.getSigno());
+        signoEntity.setNombre(signo.getNombre());
         signoEntity.setCodigo(signo.getCodigo());
 
         signoRepository.save(signoEntity);

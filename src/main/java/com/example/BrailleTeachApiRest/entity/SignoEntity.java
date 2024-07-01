@@ -16,6 +16,8 @@ public class SignoEntity {
     private Long idSigno;
     @Column(name = "signo", columnDefinition = "varchar(50) not null")
     private String signo;
+    @Column(name = "nombre", columnDefinition = "varchar(50) not null")
+    private String nombre;
     @Column(name = "codigo", columnDefinition = "int(11) not null")
     private Integer codigo;
 }
