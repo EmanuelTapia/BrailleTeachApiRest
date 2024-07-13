@@ -16,17 +16,11 @@ public class SonidoAnimalEntity {
     private Long idSonidoAnimal;
     @Column(name = "nombre", columnDefinition = "varchar(50) not null")
     private String nombre;
-    @Column(name = "descripcionVoz", columnDefinition = "varchar(50) not null")
-    private String descripcionVoz;
-    @Column(name = "sonido", columnDefinition = "varchar(50) not null")
+    @Column(name = "sonido", columnDefinition = "longblob not null")
     private String sonido;
-    @Column(name = "nivel", columnDefinition = "int(20) not null")
-    private Integer nivel;
-    @Column(name = "respuestaCorrecta", columnDefinition = "int(50) not null")
-    private Integer respuestaCorrecta;
-
-    @ManyToOne
-    @JoinColumn(name = "idMinijuego")
-    private MinijuegoEntity idMinijuego;
+    @Column(name = "respuesta", columnDefinition = "varchar(50) not null")
+    private Integer respuesta;
+    @Column(name = "codigo", columnDefinition = "int(50) not null")
+    private Integer codigo;
 
 }
