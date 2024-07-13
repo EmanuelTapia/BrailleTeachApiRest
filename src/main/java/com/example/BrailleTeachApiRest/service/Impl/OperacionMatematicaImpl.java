@@ -34,13 +34,11 @@ public class OperacionMatematicaImpl implements OperacionMatematicaService {
     public OperacionMatematicaEntity updateOperacionMatematicaById(OperacionMatematicaEntity operacionMatematica, Long id) {
         OperacionMatematicaEntity operacionMatematicaEntity = operacionMatematicaRepository.findById(id).get();
 
-        operacionMatematicaEntity.setNombre(operacionMatematica.getNombre());
-        operacionMatematicaEntity.setDescripcionVoz(operacionMatematica.getDescripcionVoz());
-        operacionMatematicaEntity.setNivel(operacionMatematica.getNivel());
-        operacionMatematicaEntity.setOperacion(operacionMatematica.getOperacion());
-        operacionMatematicaEntity.setOperandos(operacionMatematica.getOperandos());
-        operacionMatematicaEntity.setRespuestaCorrecta(operacionMatematica.getRespuestaCorrecta());
-        operacionMatematicaEntity.setIdMinijuego(operacionMatematica.getIdMinijuego());
+        operacionMatematicaEntity.setNumero1(operacionMatematica.getNumero1());
+        operacionMatematicaEntity.setOperador(operacionMatematica.getOperador());
+        operacionMatematicaEntity.setNumero2(operacionMatematica.getNumero2());
+        operacionMatematicaEntity.setRespuesta(operacionMatematica.getRespuesta());
+        operacionMatematicaEntity.setCodigo(operacionMatematica.getCodigo());
 
         operacionMatematicaRepository.save(operacionMatematicaEntity);
 
