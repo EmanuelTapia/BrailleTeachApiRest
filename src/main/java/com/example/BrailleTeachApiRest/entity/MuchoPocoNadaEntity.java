@@ -14,27 +14,27 @@ public class MuchoPocoNadaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idMuchoPocoNada", columnDefinition = "bigInt(20) not null")
     private Long idMuchoPocoNada;
-    @Column(name = "Numero1", columnDefinition = "int(10) not null")
-    private Integer Numero1;
-    @Column(name = "Numero2", columnDefinition = "int(10) not null")
-    private Integer Numero2;
-    @Column(name = "Numero3", columnDefinition = "int(10) not null")
-    private Integer Numero3;
-    @Column(name = "Letra1", columnDefinition = "varchar(10) not null")
-    private String Letra1;
-    @Column(name = "Letra2", columnDefinition = "varchar(10) not null")
-    private String Letra2;
-    @Column(name = "Letra3", columnDefinition = "varchar(10) not null")
-    private String Letra3;
-    @Column(name = "Opcion1", columnDefinition = "varchar(20) not null")
-    private String Opcion1;
-    @Column(name = "Opcion2", columnDefinition = "varchar(20) not null")
-    private String Opcion2;
-    @Column(name = "Opcion3", columnDefinition = "varchar(20) not null")
-    private String Opcion3;
-    @Column(name = "Respuesta", columnDefinition = "varchar(50) not null")
-    private Integer Respuesta;
-    @Column(name = "Codigo", columnDefinition = "int(15000) not null")
-    private Integer Codigo;
+    @Column(name = "numero1", columnDefinition = "int(10) not null")
+    private Integer numero1;
+    @Column(name = "numero2", columnDefinition = "int(10) not null")
+    private Integer numero2;
+    @Column(name = "numero3", columnDefinition = "int(10) not null")
+    private Integer numero3;
+    @Column(name = "letra1", columnDefinition = "varchar(10) not null")
+    private String letra1;
+    @Column(name = "letra2", columnDefinition = "varchar(10) not null")
+    private String letra2;
+    @Column(name = "letra3", columnDefinition = "varchar(10) not null")
+    private String letra3;
+    @Column(name = "opcion1", columnDefinition = "varchar(20) not null")
+    private String opcion1;
+    @Column(name = "opcion2", columnDefinition = "varchar(20) not null")
+    private String opcion2;
+    @Column(name = "opcion3", columnDefinition = "varchar(20) not null")
+    private String opcion3;
+    @Column(name = "respuesta", columnDefinition = "varchar(50) not null")
+    private Integer respuesta;
+    @Column(name = "codigo", columnDefinition = "int(50) not null")
+    private Integer codigo;
 
 }
