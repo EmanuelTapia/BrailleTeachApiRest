@@ -1,6 +1,5 @@
 package com.example.BrailleTeachApiRest.controller;
 
-
 import com.example.BrailleTeachApiRest.entity.MuchoPocoNadaEntity;
 import com.example.BrailleTeachApiRest.service.MuchoPocoNadaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +10,7 @@ import java.util.Optional;
 @CrossOrigin
 @RestController
 @RequestMapping("/muchopoconada")
+
 public class MuchoPocoNadaController {
 
     @Autowired
