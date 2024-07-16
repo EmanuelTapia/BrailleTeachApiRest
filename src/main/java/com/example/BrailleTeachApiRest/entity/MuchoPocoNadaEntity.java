@@ -33,7 +33,7 @@ public class MuchoPocoNadaEntity {
     @Column(name = "opcion3", columnDefinition = "varchar(20) not null")
     private String opcion3;
     @Column(name = "respuesta", columnDefinition = "varchar(50) not null")
-    private Integer respuesta;
+    private String respuesta;
     @Column(name = "codigo", columnDefinition = "int(50) not null")
     private Integer codigo;
 

@@ -14,6 +14,7 @@ public class MuchoPocoNadaServiceImpl implements MuchoPocoNadaService {
 
     @Autowired
     private MuchoPocoNadaRepository muchoPocoNadaRepository;
+
     @Override
     public List<MuchoPocoNadaEntity> getMuchoPocoNada() {return this.muchoPocoNadaRepository.findAll();
     }
@@ -31,15 +32,15 @@ public class MuchoPocoNadaServiceImpl implements MuchoPocoNadaService {
     public MuchoPocoNadaEntity updateMuchoPocoNadaById(MuchoPocoNadaEntity muchoPocoNada, Long id) {
         MuchoPocoNadaEntity muchoPocoNadaEntity = muchoPocoNadaRepository.findById(id).get();
 
-        muchoPocoNadaEntity.setNumero1(muchoPocoNadaEntity.getNumero1());
-        muchoPocoNadaEntity.setNumero2(muchoPocoNadaEntity.getNumero2());
-        muchoPocoNadaEntity.setNumero3(muchoPocoNadaEntity.getNumero3());
-        muchoPocoNadaEntity.setLetra1(muchoPocoNadaEntity.getLetra1());
-        muchoPocoNadaEntity.setLetra2(muchoPocoNadaEntity.getLetra2());
-        muchoPocoNadaEntity.setLetra3(muchoPocoNadaEntity.getLetra3());
-        muchoPocoNadaEntity.setOpcion1(muchoPocoNadaEntity.getOpcion1());
-        muchoPocoNadaEntity.setOpcion2(muchoPocoNadaEntity.getOpcion2());
-        muchoPocoNadaEntity.setOpcion3(muchoPocoNadaEntity.getOpcion3());
+        muchoPocoNadaEntity.setNumero1(muchoPocoNada.getNumero1());
+        muchoPocoNadaEntity.setNumero2(muchoPocoNada.getNumero2());
+        muchoPocoNadaEntity.setNumero3(muchoPocoNada.getNumero3());
+        muchoPocoNadaEntity.setLetra1(muchoPocoNada.getLetra1());
+        muchoPocoNadaEntity.setLetra2(muchoPocoNada.getLetra2());
+        muchoPocoNadaEntity.setLetra3(muchoPocoNada.getLetra3());
+        muchoPocoNadaEntity.setOpcion1(muchoPocoNada.getOpcion1());
+        muchoPocoNadaEntity.setOpcion2(muchoPocoNada.getOpcion2());
+        muchoPocoNadaEntity.setOpcion3(muchoPocoNada.getOpcion3());
         muchoPocoNadaEntity.setRespuesta(muchoPocoNada.getRespuesta());
         muchoPocoNadaEntity.setCodigo(muchoPocoNada.getCodigo());
 
