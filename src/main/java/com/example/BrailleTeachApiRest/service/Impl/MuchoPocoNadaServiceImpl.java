@@ -42,6 +42,7 @@ public class MuchoPocoNadaServiceImpl implements MuchoPocoNadaService {
         muchoPocoNadaEntity.setOpcion2(muchoPocoNada.getOpcion2());
         muchoPocoNadaEntity.setOpcion3(muchoPocoNada.getOpcion3());
         muchoPocoNadaEntity.setRespuesta(muchoPocoNada.getRespuesta());
+        muchoPocoNadaEntity.setRespuesta2(muchoPocoNada.getRespuesta2());
         muchoPocoNadaEntity.setCodigo(muchoPocoNada.getCodigo());
 
         muchoPocoNadaRepository.save(muchoPocoNadaEntity);
