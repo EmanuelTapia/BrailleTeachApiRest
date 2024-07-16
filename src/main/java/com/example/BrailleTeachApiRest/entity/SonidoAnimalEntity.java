@@ -22,5 +22,7 @@ public class SonidoAnimalEntity {
     private Integer respuesta;
     @Column(name = "codigo", columnDefinition = "int(50) not null")
     private Integer codigo;
+    @Column(name = "imagen", columnDefinition = "longblob not null")
+    private String imagen;
 
 }

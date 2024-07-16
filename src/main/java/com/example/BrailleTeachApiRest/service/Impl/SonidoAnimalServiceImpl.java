@@ -38,6 +38,7 @@ public class SonidoAnimalServiceImpl implements SonidoAnimalService {
         sonidoAnimalEntity.setSonido(sonidoAnimal.getSonido());
         sonidoAnimalEntity.setRespuesta(sonidoAnimal.getRespuesta());
         sonidoAnimalEntity.setCodigo(sonidoAnimal.getCodigo());
+        sonidoAnimalEntity.setImagen(sonidoAnimal.getImagen());
 
         sonidoAnimalRepository.save(sonidoAnimalEntity);
 
