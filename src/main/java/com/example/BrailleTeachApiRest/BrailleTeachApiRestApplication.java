@@ -9,5 +9,5 @@ public class BrailleTeachApiRestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BrailleTeachApiRestApplication.class, args);
 	}
-
+	
 }

@@ -16,12 +16,14 @@ public class SonidoAnimalEntity {
     private Long idSonidoAnimal;
     @Column(name = "nombre", columnDefinition = "varchar(50) not null")
     private String nombre;
+    @Lob
     @Column(name = "sonido", columnDefinition = "longblob not null")
     private byte[]  sonido;
     @Column(name = "respuesta", columnDefinition = "varchar(50) not null")
-    private Integer respuesta;
+    private String respuesta;
     @Column(name = "codigo", columnDefinition = "int(50) not null")
     private Integer codigo;
+    @Lob
     @Column(name = "imagen", columnDefinition = "longblob not null")
     private byte[]  imagen;
 
